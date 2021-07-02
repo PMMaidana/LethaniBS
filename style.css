@@ -1,0 +1,218 @@
+
+.button {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  html {
+    background: #012a4a;
+    font: 62.5%/1.5em "Trebuchet Ms", helvetica;
+  }
+  
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+/*     font-smoothing: antialiased */;
+  }
+    
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  
+  p {
+    font-size: 1.5em;
+    color: #012a4a;
+  }
+
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 75em;
+    width: 95%;
+    margin: 40px auto;  
+    overflow: hidden;
+    
+    border-radius: 0.6em;
+    background: #012a4a;
+    box-shadow: 0 0.5em 0 #012a4a;
+  }
+
+  
+  .layout-inline > * {
+    display: inline-block;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+
+
+  
+  .col {
+    padding: 1em;
+    width: 12%;
+  }
+  
+  .col-pro {
+    width: 44%;
+  }
+  
+  .col-pro > * {
+    vertical-align: middle;
+  }
+  
+  .col-qty {
+    text-align: center;
+    width: 17%;
+  }
+  
+  .col-numeric p {
+    font: bold 1.8em helvetica;
+  }
+  
+  .col-total p {
+    color: #12c8b1;
+  }
+  
+  .tf .col {
+    width: 20%;
+  }
+  
+  .row > div {
+    vertical-align: middle;
+  }
+  
+  .row-bg2 {
+    background: #f7f7f7;
+  }
+  
+  .col-qty > * {
+    vertical-align: middle; 
+  }
+  
+  .col-qty > input {
+    max-width: 2.6em;
+  }
+  
+  
+  a.qty {
+    width: 1em;
+    line-height: 1em;
+    border-radius: 2em;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    background: #43ace3;  
+    color: #fff;
+  }
+  
+  a.qty:hover {
+    background: #3b9ac6;
+  }
+  
+  .btn {
+    padding: 10px 30px;
+    border-radius: 0.3em;
+    font-size: 1.4em;
+    font-weight: bold;
+    background: #43ace3;
+    color: #fff;
+    box-shadow: 0 3px 0 rgba(59,154,198, 1)
+  }
+  
+  .btn:hover {
+    box-shadow: 0 3px 0 rgba(59,154,198, 0)
+  }
+  
+  .btn-update {
+    float: right;
+    margin: 0 0 1.5em 0;
+  }
+  
+  .transition {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  body{
+    background-color: #012a4a;
+    font-family: sans-serif;
+  }
+  
+  .container{
+    margin: auto;
+    background-color: #012a4a;
+    width: 800px;
+    padding: 30px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 600px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#012a4a;
+  }
+  
+  ul.slider li img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1;
+  }
+  
+  ul.slider li:target {
+      opacity: 1;
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: #012a4a;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }

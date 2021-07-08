@@ -1,7 +1,14 @@
+function removeThis(element){
+       $(`#${element}`).hide("slow").remove()
+       console.log('se removio')
+       if($("#this_price").length == 0) {
+              $("#total_price").html('0.00'); 
+            }else{totalPrice();}       
+}
 
 function shopCart(book) {
        let newProdCart = currentStock.find(el => el.id == book.id);
-       $("#addBooks").append(`<br>${newProdCart.name} <span class="price" value= ${newProdCart.price}>${newProdCart.price}</span></br>`);
+       $("#addBooks").append(`<div id="side_${newProdCart.id}"><br><span>${newProdCart.name}</span> <span class="price" id="this_price"  value= ${newProdCart.price}>${newProdCart.price}</span><button onclick="removeThis('side_${newProdCart.id}')">x</button></div>`);
        totalPrice()
 }
 
@@ -25,7 +32,4 @@ $( ".cart" ).click(function() {
 
 $( "#showBar" ).click(function(){
        $( "#mySidebar" ).slideToggle("slow");
-
-       console.log('algo')
    });
-
